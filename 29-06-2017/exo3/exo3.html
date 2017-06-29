@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Exo2</title>
+    <title>Exo3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/base.css" />
     <script>
-      var name= prompt("Quel est votre nom?");
-      console.log("My name is " + name + ".");
-      
+    
     </script>
   </head>
   <body>
+    Votre nom ? <input type="text" id="myName">
+    <button onClick="console.log(document.getElementById("myName").value)">OK</button>
   </body>
 </html>
