@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exo10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/exo10.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <input type="number" id="number1" onChange="if(parseInt(number1.value)%2==0) {
+                      result.innerHTML = 'pair';
+              }
+              else {
+                      result.innerHTML = 'impair';
+              }" />
+    <div id="result"></div>
+  </body>
+</html>
