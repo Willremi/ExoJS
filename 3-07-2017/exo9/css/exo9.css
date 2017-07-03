@@ -1,0 +1,17 @@
+body {
+  background-color: grey;
+  text-align: center;
+}
+
+h1 {
+  font-family: arial;
+  font-size: 25px;
+}
+
+div {
+  border: 1px solid black;
+  font-size: 250px;
+  border-radius: 10px;
+  background-color: blue;
+  color: red;
+}
