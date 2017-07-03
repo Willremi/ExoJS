@@ -4,11 +4,52 @@
     <title>Exo8</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/exo8.css" />
     <script src="js/script.js"></script>
   </head>
   <body>
-    <h2>Ton nom</h2>
-    <input type="text" onChange="console.log(myName); myName=this.value">
+    <div class="container">
+      <form  action="" method="post" enctype="multipart/form-data" />
+      <input type="hidden" name="token" value="" />
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label for="firstname">Prénom *</label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <input class="form-control" type="text" id="firstname" name="firstname" placeholder="Votre prénom" required />
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label for="lastname">Nom *</label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Votre nom" required />
+            </div>
+          </div>
+        </div><!-- /row -->
+
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label for="age">Age</label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <input class="form-control" type="number" id="age" name="age" value="0" />
+            </div>
+          </div>
+        </div><!-- /row -->
+    </div>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
