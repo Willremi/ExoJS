@@ -1,0 +1,12 @@
+body {
+  background-color: grey;
+  text-align: center;
+}
+
+div {
+  border: 1px solid black;
+  font-size: 250px;
+  border-radius: 50px;
+  background-color: green;
+  color: blue;
+}
