@@ -1,11 +1,16 @@
-for(var i=1; i<51;i++){
-  if(i%3==0) {
-    console.log("fizz");
+var fizzBuzz = function(start, end, element) {
+  var number1 = "";
+  for (var i = start; i < end; i++) {
+    if (i % 3 == 0) {
+      number1 += "fizz";
+    } else if (i % 5 == 0) {
+      number1 += "buzz";
+    } else {
+      number1 += i;
+    }
+
+    if (i < end) number1 += ", ";
   }
-  else if(i%5==0) {
-    console.log("buzz");
-  }
-  else {
-    console.log(i);
-  }
+
+  document.getElementById('result').innerHTML = number1;
 }
