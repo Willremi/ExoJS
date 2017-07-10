@@ -1,5 +1,4 @@
 var allGreen = function() {
-
   r2g();
   b2g();
 }
