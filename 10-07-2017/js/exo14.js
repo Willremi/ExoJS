@@ -11,16 +11,16 @@ var allGreen = function() {
 }
 
 var r2g = function() {
-				var divs = Array.from(document.getElementsByClassName('red'));
-        divs.forEach(makeGreen);
-			}
+  var divs = Array.from(document.getElementsByClassName('red'));
+  divs.forEach(makeGreen);
+}
 
 var b2g = function() {
-				var divs = Array.from(document.getElementsByClassName('blue'));
-				divs.forEach(makeGreen);
-			}
+  var divs = Array.from(document.getElementsByClassName('blue'));
+  divs.forEach(makeGreen);
+}
 
 var reset = function() {
-				var divs = Array.from(document.getElementsByTagName('div'));
-				divs.forEach(resetDiv);
-			}
+  var divs = Array.from(document.getElementsByTagName('div'));
+  divs.forEach(resetDiv);
+}
