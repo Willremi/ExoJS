@@ -1,0 +1,19 @@
+div {
+  margin: 10px;
+  border: 1px solid black;
+  float:left;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px;
+}
+
+#myDiv {
+  min-width: 250px;
+  min-height: 250px;
+  background-color: blue;
+}
+
+#newDiv {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+}
