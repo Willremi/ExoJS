@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>First javascript course</title>
+
+    <script src="js/fib.js"></script>
+    <link rel="stylesheet" href="css/fib.css">
+  </head>
+
+  <body>
+    <input type="number" id="iterCount" name="iterCount" value="" max="20">
+    <button type="button" name="button" onclick="var rabbitCount = document.getElementById('iterCount').value; if(rabbitCount > 20) return; printRabbits(fibonacci(0, 1, rabbitCount));">Add rabbits</button>
+  </body>
+
+</html>
