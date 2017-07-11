@@ -11,14 +11,17 @@
   <form id="heros">
     <label class="col" for="lastname">Nom:</label>
     <input name="lastName" id="lastName" type="text" />
+
     <label class="col" for="agility">Agilité :</label>
     <input name="agility" id="agility" type="number" min="0" value="0" />
+
     <label class="col" for="force">Force :</label>
     <input name="force" id="force" type="number" min="0" value="0" />
-    <label class="col" for="endurance">Endurance :</label>
-    <input name="agility" id="endurance" type="number" min="0" value="0" />
 
-    <button></button>
+    <label class="col" for="endurance">Endurance :</label>
+    <input name="endurance" id="endurance" type="number" min="0" value="0" />
   </form>
+      <button onclick="document.getElementById('point').innerHTML = pointPV(getElementById('agility').value, getElementById('force').value, getElementById('endurance').value);">resultat</button>
+  <div id="point"></div>
 </body>
 </html>
