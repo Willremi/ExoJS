@@ -3,21 +3,22 @@
 <head>
   <title>Heros</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8">
-  <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+  <meta charset="utf-8" />
   <link rel="stylesheet" href="css/heros.css" />
   <script src="js/heros.js"></script>
 </head>
 <body>
-  <div class="container">
-    <form  action="" method="post" enctype="multipart/form-data">
-      <input type="hidden" name="token" value="" />
-      <div class="row">
-        
-      </div><!-- /row -->
-    </div><!-- /container -->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+  <form id="heros">
+    <label class="col" for="lastname">Nom:</label>
+    <input name="lastName" id="lastName" type="text" />
+    <label class="col" for="agility">Agilité :</label>
+    <input name="agility" id="agility" type="number" min="0" value="0" />
+    <label class="col" for="force">Force :</label>
+    <input name="force" id="force" type="number" min="0" value="0" />
+    <label class="col" for="endurance">Endurance :</label>
+    <input name="agility" id="endurance" type="number" min="0" value="0" />
+
+    <button></button>
+  </form>
+</body>
+</html>
