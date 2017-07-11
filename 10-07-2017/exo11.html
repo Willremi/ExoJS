@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>first page : Hello world</title>
+    <title>Exo10</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="css/exo11.css" />
-    <script src="js/exo11.js">
-
-    </script>
+    <script src="js/exo11.js"></script>
   </head>
   <body>
+    <input type="number" id="number1" onChange="if(parseInt(document.getElementById('number1').value)%2==0){
+      document.getElementById('result').innerHTML = 'pair';
+    }
+    else {
+      document.getElementById('result').innerHTML = 'impair';
+    }" />
+    <div id="result"></div>
   </body>
 </html>
