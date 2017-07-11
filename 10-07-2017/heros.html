@@ -13,15 +13,16 @@
     <input name="lastName" id="lastName" type="text" />
 
     <label class="col" for="agility">Agilité :</label>
-    <input name="agility" id="agility" type="number" min="0" value="0" />
+    <input name="agility" id="agility" type="number" min="0" max="100" value="0" />
 
     <label class="col" for="force">Force :</label>
-    <input name="force" id="force" type="number" min="0" value="0" />
+    <input name="force" id="force" type="number" min="0" max="100" value="0" />
 
     <label class="col" for="endurance">Endurance :</label>
-    <input name="endurance" id="endurance" type="number" min="0" value="0" />
+    <input name="endurance" id="endurance" type="number" min="0" max="100" value="0" />
   </form>
       <button onclick="document.getElementById('point').innerHTML = pointPV(getElementById('agility').value, getElementById('force').value, getElementById('endurance').value);">resultat</button>
   <div id="point"></div>
+
 </body>
 </html>
