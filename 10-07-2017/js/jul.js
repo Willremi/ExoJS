@@ -12,6 +12,7 @@ dog_site.init = function() {
 dog_site.mousedown = function() {
   dog_site.dog.src = "img/jul.png";
   dog_site.pets++;
+  localStorage.setItem("score", dog_site.pets);
   if (dog_site.pets < 10) {
     dog_site.dog.className += " clicked";
   }
