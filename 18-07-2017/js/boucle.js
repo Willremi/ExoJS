@@ -38,14 +38,14 @@ for (var i in myArray) {
 
 //afficher les nombres décimaux
 for (var value of myArray) {
-  if (!Number.isInteger(value)) {
+  if (typeof value == 'number' && !Number.isInteger(value)) {
     console.log(value);
   }
 }
 
 //afficher les nombres décimaux (méthode alternative)
 for (var value of myArray) {
-  if (value - Math.round(value) != 0) {
+  if (typeof value == 'number' && value - Math.round(value) != 0) {
     console.log(value);
   }
 }
