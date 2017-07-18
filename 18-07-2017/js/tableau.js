@@ -5,7 +5,7 @@ var myArray = [];
 // Déclaration et initialisation d'un tableau avec 3 éléments
 var myArray2 = [123, 42, 3.14, "Hello"];
 
-//inspection des tableaux dans la console
+// Inspection des tableaux dans la console
 console.log(myArray);
 console.log(myArray2);
 
@@ -15,11 +15,11 @@ myArray.push(42);
 myArray.push(3.14);
 myArray.push("Hello");
 
-//inspection des tableaux dans la console
+// Inspection des tableaux dans la console
 console.log(myArray);
 console.log(myArray2);
 
-//Afficher la taille d'un tableau
+// Afficher la taille d'un tableau
 console.log(myArray.length);
 
 // Si le tableau contient au moins un élément,
@@ -51,7 +51,7 @@ var index = 1
 myArray.splice(index, 1);
 console.log(myArray);
 
-// supprimer la valeur 3.14 du tableau
+// Supprimer la valeur 3.14 du tableau
 var index = 1
 myArray.splice(index, 1);
 console.log(myArray);
