@@ -25,10 +25,14 @@ if (boolean == true) {
 //structure de contrôle avec boolean2
 if (boolean2 == true) {
   document.write('<div id="boolean2-value">boolean2 est égal à true</div>');
-}
-else {
+} else {
   document.write('<div id="boolean2-value">boolean2 n\'est pas égal à true</div>');
 }
 
 //boucler sur myArray et afficher toutes les valeurs
 // qui sont différentes de true ou false
+for (var i = 0; i < myArray.length; i++) {
+  if (myArray[i] != false && myArray[i] != true) {
+    document.write(myArray[i] + "<br />");
+  }
+}
