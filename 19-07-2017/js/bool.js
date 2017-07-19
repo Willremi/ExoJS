@@ -45,23 +45,43 @@
 // }
 
 // mini appli checklist vacance
+// function testGet() {
+//   var gas = document.getElementById("gas").checked;
+//   console.log(gas);
+//
+//   var inputs = document.getElementsByTagName("input");
+//   for(var input of inputs) {
+//     console.log(input.checked);
+//
+//   }
+//
+//   var inputs = document.getElementsByClassName("checklist-item");
+//   for(var input of inputs) {
+//     console.log(input.checked);
+//   }
+//
+//   var inputs = document.querySelectorAll("div label input.checklist-item");
+//   for(var input of inputs) {
+//     console.log(input.checked);
+//   }
+//
+// }
+
 function check() {
-  // var gas = document.getElementById("gas").checked;
-  // console.log(gas);
+  var result = true;
 
-  var inputs = document.getElementsByTagName("input");
+  var inputs = document.querySelectorAll("div label input.checklist-item");
+
   for(var input of inputs) {
-    console.log(input.checked);
-
+    if(!input.checked){
+      result = false;
+      break;
+    }
   }
 
-  // inputs = document.getElementsByClassName("checklist-item");
-  // for(var input of inputs) {
-  //   console.log(input.checked);
-  // }
-
-  // inputs = document.querySelectorAll("div label input.checklist-item");
-  // for(var input of inputs) {
-  //   console.log(input.checked);
-  // }
+  if(result) {
+    document.querySelector("#message").innerHTML = "Vous pouvez y aller";
+  } else {
+    document.querySelector("#message").innerHTML = "Attendez, il reste des choses à faire";
+  }
 }
