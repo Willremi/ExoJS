@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Bool</title>
+  <link rel="stylesheet" href="css/bool.css" />
+</head>
+<body>
+  <!--
+  éléments d'interface
+
+  +cases à cocher :
+  -gaz éteint
+  -électricité éteinte
+  -fenêtres fermées
+  -j'ai pris la clé
+
+  +bouton de validation avec le label "puis-je partir en vacance ?"
+
+  une zone d'affichage de message
+
+  élements de code :
+  - une fonction qui est appelé par le bouton de validation
+  - dans cette fonction il faudra développer les sections suivantes :
+  - récupération des valeurs
+  - analyse des valeurs
+  - affichage du message
+
+  message:
+  -"Vous pouvez y aller" si toutes les cases est cochées
+  -"attendez, il reste des choses à faire" si au moins une case n'est pas cochée
+
+-->
+<div id="message"></div>
+
+
+<div>
+  <label><input class="checklist-item" type="checkbox" id="gas" /> Gaz éteint</label>
+</div>
+<div>
+  <label><input class="checklist-item" type="checkbox" id="electricity" /> Electricité éteinte</label>
+</div>
+<div>
+  <label><input class="checklist-item" type="checkbox" id="windows" /> Fenêtre fermées</label>
+</div>
+<div>
+  <label><input class="checklist-item" type="checkbox" id="keys" /> J'ai pris la clé</label>
+</div>
+
+<div>
+  <button onclick="check()">ok</button>
+</div>
+<script type="text/javascript" src="js/bool.js"></script>
+</body>
+</html>
