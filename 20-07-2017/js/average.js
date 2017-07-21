@@ -23,7 +23,7 @@ var data = [
 // à partir de ces données :
 //  - afficher un tableau html contenant le nom des utilisateurs et leurs scores, triés par nom d'utilisateur
 //  - afficher un tableau html contenant le nom des utilisateurs et leur score moyen, triés par nom d'utilisateur
-//  - afficher un tableau html contenantles 5 meilleurs scores et le nom de l'utilisateurs et la position du score, triés par ordre décroissant,puis par nom de user
+//  - afficher un tableau html contenant les 5 meilleurs scores et le nom de l'utilisateurs et la position du score, triés par ordre décroissant,puis par nom de user
 
 // Indice :
 // - vous pouvez parcourir le tableau de données avec une boucle for (avec index, for in, for of)
