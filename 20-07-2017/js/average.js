@@ -71,12 +71,59 @@ html += "</table>";
 
 document.querySelector("#listAll").innerHTML = html;
 
-var somme = 0;
+var somme1 = 0;
 
 for(var j = 0; j < (data[0].scores).length; j++) {
-  somme += data[0].scores[j];
-  var moyenne = somme / (data[0].scores).length;
+  somme1 += data[0].scores[j];
+  var moyenne1 = somme1 / (data[0].scores).length;
 }
 
-console.log(somme);
-console.log(moyenne);
+console.log(moyenne1);
+
+var somme2 = 0;
+
+for(var j = 0; j < (data[1].scores).length; j++) {
+  somme2 += data[1].scores[j];
+  var moyenne2 = somme2 / (data[1].scores).length;
+}
+
+console.log(moyenne2);
+
+var somme3 = 0;
+
+for(var j = 0; j < (data[2].scores).length; j++) {
+  somme3 += data[2].scores[j];
+  var moyenne3 = somme3 / (data[2].scores).length;
+}
+
+console.log(moyenne3);
+
+data[0].scores = moyenne1;
+data[1].scores = moyenne2;
+data[2].scores = moyenne3;
+
+var html = "";
+
+html += "<table>";
+
+    html += "<thead>";
+    html += "<tr>";
+    // html += "<th>ID</th>";
+    html += "<th>Names</th>";
+    html += "<th>Scores</th>";
+    html += "</tr>";
+    html += "</thead>";
+
+    html += "<tbody>";
+    for(var i = 0; i < data.length; i++) {
+      html += "<tr>";
+      // html += "<td>" + data[i].id + "</td>";
+      html += "<td>" + data[i].name + "</td>";
+      html += "<td>" + data[i].scores + "</td>";
+      html += "</tr>"
+    }
+    html += "</tbody>";
+
+html += "</table>";
+
+document.querySelector("#listAverage").innerHTML = html;
