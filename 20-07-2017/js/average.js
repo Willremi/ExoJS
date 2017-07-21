@@ -2,14 +2,14 @@
 
 var data = [
   {
-    id: 243,
-    name: "user 2",
-    scores : [76, 64, 10, 67, 64]
-  },
-  {
     id: 123,
     name: "user 1",
     scores : [42, 100, 54, 65, 32]
+  },
+  {
+    id: 243,
+    name: "user 2",
+    scores : [76, 64, 10, 67, 64]
   },
   {
     id: 768,
