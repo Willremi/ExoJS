@@ -22,7 +22,7 @@ var data = [
 
 // à partir de ces données :
 //  - afficher un tableau html contenant le nom des utilisateurs et leurs scores, triés par nom d'utilisateur
-//  - afficher un tableau html contenant le nom des utilisateurs et leur score moyen, triés par nomd'utilisateur
+//  - afficher un tableau html contenant le nom des utilisateurs et leur score moyen, triés par nom d'utilisateur
 //  - afficher un tableau html contenantles 5 meilleurs scores et le nom de l'utilisateurs et la position du score, triés par ordre décroissant,puis par nom de user
 
 // Indice :
@@ -51,33 +51,32 @@ html += "<table>";
 
     html += "<thead>";
     html += "<tr>";
-
     // html += "<th>ID</th>";
-
     html += "<th>Names</th>";
-
     html += "<th>Scores</th>";
-
     html += "</tr>";
     html += "</thead>";
 
     html += "<tbody>";
-
     for(var i = 0; i < data.length; i++) {
       html += "<tr>";
       // html += "<td>" + data[i].id + "</td>";
-
       html += "<td>" + data[i].name + "</td>";
-
       html += "<td>" + data[i].scores + "</td>";
-
       html += "</tr>"
     }
-
     html += "</tbody>";
-
-
 
 html += "</table>";
 
 document.querySelector("#listAll").innerHTML = html;
+
+var somme = 0;
+
+for(var j = 0; j < (data[0].scores).length; j++) {
+  somme += data[0].scores[j];
+  var moyenne = somme / (data[0].scores).length;
+}
+
+console.log(somme);
+console.log(moyenne);
