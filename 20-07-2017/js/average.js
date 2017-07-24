@@ -18,6 +18,9 @@ var data = [
   }
 ];
 
+
+
+
 // Intégrer Bootstrap
 
 // à partir de ces données :
@@ -63,13 +66,15 @@ html += "<table>";
       // html += "<td>" + data[i].id + "</td>";
       html += "<td>" + data[i].name + "</td>";
       html += "<td>" + data[i].scores + "</td>";
-      html += "</tr>"
+      html += "</tr>";
     }
     html += "</tbody>";
 
 html += "</table>";
 
 document.querySelector("#listAll").innerHTML = html;
+
+
 
 var somme1 = 0;
 
@@ -127,3 +132,48 @@ html += "<table>";
 html += "</table>";
 
 document.querySelector("#listAverage").innerHTML = html;
+
+var data = [
+  {
+    id: 123,
+    name: "user 1",
+    scores : [42, 100, 54, 65, 32]
+  },
+  {
+    id: 243,
+    name: "user 2",
+    scores : [76, 64, 10, 67, 64]
+  },
+  {
+    id: 768,
+    name: "user 3",
+    scores : [93, 2, 56, 78, 100]
+  }
+];
+var html = "";
+
+html += "<table>";
+
+    html += "<thead>";
+    html += "<tr>";
+    // html += "<th>ID</th>";
+    html += "<th>Names</th>";
+    html += "<th>Scores</th>";
+    html += "</tr>";
+    html += "</thead>";
+
+    html += "<tbody>";
+for(var i = 0; i < data.length; i++){
+    html += "<tr>";
+    html += "<td>" + data[i].name + "</td>";
+
+data[i].scores.sort(function(a, b) {
+  return b - a;
+});
+    html += "<td>" + data[i].scores + "</td>";
+    html += "</tr>";
+}
+html += "</tbody>";
+html += "</table>";
+
+document.querySelector("#listTop").innerHTML = html;
