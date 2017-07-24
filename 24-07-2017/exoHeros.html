@@ -3,25 +3,36 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
-    <title>first page : Hello world</title>
+    <title>Héros</title>
     <link rel="stylesheet" href="css/!exoHeros.css" />
   </head>
   <body>
-    <form id="heros">
-      <label class="col" for="lastname">Nom:</label>
-      <input name="lastName" id="lastName" type="text" />
-
-      <label class="col" for="agility">Agilité :</label>
-      <input name="agility" id="agility" type="number" min="0" max="100" value="0" />
-
-      <label class="col" for="force">Force :</label>
-      <input name="force" id="force" type="number" min="0" max="100" value="0" />
-
-      <label class="col" for="endurance">Endurance :</label>
-      <input name="endurance" id="endurance" type="number" min="0" max="100" value="0" />
-    </form>
-        <button onclick= "result()">resultat</button>
-    <div id="point"></div>
+    <table width="350px" border="1px">
+  <tr>
+    <th colspan="2">Héros</th>
+  </tr>
+  <tr>
+    <td>Nom </td>
+    <td><input type="text" id="name" placeholder="" /></td>
+  </tr>
+  <tr>
+    <td>Agilité</td>
+    <td><input type="number" id="agility" placeholder="" min="0" max="100" /></td>
+  </tr>
+  <tr>
+    <td>Force</td>
+    <td><input type="number" id="force" placeholder="" min="0" max="100" /></td>
+  </tr>
+  <tr>
+    <td>endurance</td>
+    <td><input type="number" id="endurance" placeholder="" min="0" max="100" /></td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td><p id="total"></p></td>
+  </tr>
+</table>
+<input type="button" onclick="result()" value="result">
 
     <script type="text/javascript" src="js/exoHeros.js"></script>
   </body>
